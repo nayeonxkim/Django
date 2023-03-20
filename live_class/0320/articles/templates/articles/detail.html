@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <H1>DETAIL</H1>
+
+  <p>글 번호 : {{articles.id}}</p>
+  <p>글 제목 : {{articles.title}}</p>
+  <p>글 내용: {{articles.content}}</p>
+  <p>생성 시간 : {{articles.created_at}}</p>
+  <hr>
+
+  <a href="{% url 'articles:index' %}">뒤로가기</a>
+
+{% endblock content %}

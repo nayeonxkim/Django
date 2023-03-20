@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>Main Page</h1>
+  <a href="{% url 'articles:new' %}">NEW</a>
+
+  {% for article in articles %}
+  
+    <p>{{article.pk}}</p>
+
+    <a href="{% url 'articles:detail' article.pk %}"><p>{{article.title}}</p></a>
+    
+    <p>{{article.content}}</p>
+
+
+  {% endfor %}
+
+
+
+{% endblock content %}
