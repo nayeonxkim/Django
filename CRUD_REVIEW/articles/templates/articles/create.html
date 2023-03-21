@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <H1>CREATE PAGE</H1>
+
+  {% comment %} method를 POST로 지정해준다. {% endcomment %}
+  {% comment %} POST 메소드는 항상 CSRF토큰 태그랑 세트 {% endcomment %}
+  <form action="" method='POST'>
+    {% csrf_token %}
+    {% comment %} as_p 속성을 사용하면 요소 하나하나를 p태그로 감싸준다. 그럼 더 예쁘게 나옴 {% endcomment %}
+    {{form.as_p}}
+
+    <input type="submit">
+  </form>
+
+
+{% endblock content %}
