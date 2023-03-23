@@ -5,10 +5,8 @@
 - 세션을 Create하는 과정
 
 - 장고의 built-in form 사용
-  
-  
-  
-  - built-in form이 있으므로 forms.py에 form을 정의할 필요없이 views.py에서 바로 사용가능
+
+- built-in form이 있으므로 forms.py에 form을 정의할 필요없이 views.py에서 바로 사용가능
 
 - views.py에서 POST 메서드일때 처리할 내용
   
@@ -29,8 +27,6 @@
 ## 로그아웃?
 
 클라이언트, 서버의 DB에 있는 세션을 Delete하는 과정
-
-
 
 1. urls -> views -> templates
 
