@@ -8,4 +8,11 @@
   <hr>
   <p>작성시간 : {{article.created_at}}</p>
   <p>작성시간 : {{article.updated_at}}</p>
+  <hr>
+  <a href="{% url 'articles:index' %}">목록보기</a>
+  <a href="{% url 'articles:update' article.pk%}">수정하기</a>
+
+  <a href="{% url 'articles:delete' article.pk%}" style='color:red'>삭제하기</a>
 {% endblock content %}
+
+

@@ -9,3 +9,9 @@ class Article(models.Model):
 
     def __str__(self):
         return f'제목 : {self.title}'
+    
+
+class Articles(models.Model):
+    title = models.CharField(max_length=30)
+    content = models.TextField()
+
